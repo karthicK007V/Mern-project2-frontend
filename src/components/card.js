@@ -25,7 +25,7 @@ const Card = ({product}) => {
         <div className='shadow-lg p-3 mb-5 bg-body rounded '>
             
             <div className="card" style={{"width": "18rem"}}>
-  <img src={product.image} className="card-img-top ms-5" alt="..." style={{"height":"300px","width":"280px"}} />
+  <img src={product.image} className="card-img-top ms-5" alt="..." style={{"height":"30vh","width":"28vh"}} />
   <div className="card-body">
     <h3 className="card-title">{product.name}</h3>
     <form onChange={(e)=>setprice(e.target.value)}><h3 className="card-title">RS : ₹ {product.price+storage*25}</h3></form> 
