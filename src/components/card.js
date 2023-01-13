@@ -77,7 +77,7 @@ const Card = ({product}) => {
     {/* <button className='btn btn-primary  fs-5 mt-4   add' style={{"marginLeft":"100px"}} > Add To Cart</button> */}
 
     {state.cart.some((pro)=>pro._id===product._id)?( <button className='btn btn-danger  fs-5 mt-4  add' style={{"marginLeft":"60px"}}  onClick={()=>dispatch({type:"REMOVE_FROM_CART",payload:product
-})}> Remove From Cart</button>):(<button className='btn btn-primary  fs-5 mt-4  add' style={{"marginLeft":"100px"}}  onClick={(e)=>dispatch({type:"ADD_TO_CART",payload:{
+})}> Remove From Cart</button>):(<button className='btn btn-primary  fs-5 mt-4  add' style={{"marginLeft":"80px"}}  onClick={(e)=>dispatch({type:"ADD_TO_CART",payload:{
   product:product,
   color:color,storage:storage,price:price
  
